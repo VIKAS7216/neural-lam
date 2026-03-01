@@ -1,0 +1,10 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Tutorials
+    chapters:
+      - file: notebooks/hello_world_danra
+
+  - caption: API Reference
+    chapters:
+      - file: autoapi/index
