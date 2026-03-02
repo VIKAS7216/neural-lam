@@ -10,6 +10,8 @@ sweeps
 *.html
 *.zarr
 *slurm*
+docs/_build/
+docs/autoapi/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

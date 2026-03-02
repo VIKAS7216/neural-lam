@@ -1,0 +1,14 @@
+# docs/_toc.yml
+format: jb-book
+root: intro
+
+parts:
+  - caption: Tutorials
+    chapters:
+      - file: notebooks/hello_world_danra
+      - file: notebooks/datastore_explorer
+      - file: notebooks/adding_new_datastore
+      - file: notebooks/create_reduced_meps_dataset
+  - caption: API Reference
+    chapters:
+      - file: autoapi/index
