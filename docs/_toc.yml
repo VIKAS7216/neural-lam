@@ -3,6 +3,9 @@ format: jb-book
 root: intro
 
 parts:
+  - caption: Architecture
+    chapters:
+      - file: architecture
   - caption: Tutorials
     chapters:
       - file: notebooks/hello_world_danra
