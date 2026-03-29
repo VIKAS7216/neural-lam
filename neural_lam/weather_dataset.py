@@ -140,7 +140,7 @@ class WeatherDataset(torch.utils.data.Dataset):
         std : xr.DataArray
             Standard deviation array for the given feature category.
         feature : str
-        Feature category name used in the warning message.
+            Feature category name used in the warning message.
 
         Returns
         -------
@@ -149,7 +149,7 @@ class WeatherDataset(torch.utils.data.Dataset):
             machine epsilon to avoid division by zero during standardization.
         """
         eps = np.finfo(std.dtype).eps
-        if bool((std <= eps).any()):
+        if (std <= eps).any():   # Removed unnecessary bool() conversion
             logger.warning(
                 f"Some {feature} features have near-zero std and will be "
                 "standardized using machine epsilon to avoid NaN."
